@@ -47,10 +47,6 @@ function MyApp() {
 ```
 ## User guide
 
-### Clock
-
-Displays a complete clock.
-
 #### Props
 
 | Prop name                | Description                                     | Default value | Example values                                                        |
