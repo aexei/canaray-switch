@@ -1,4 +1,5 @@
 [![npm](https://img.shields.io/npm/v/react-cookie-switch.svg)](https://www.npmjs.com/package/react-cookie-switch)
+![NPM](https://img.shields.io/npm/l/react-cookie-switch)
 
 # react-cookie-switch
 

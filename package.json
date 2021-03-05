@@ -26,7 +26,7 @@
     "Canary",
     "Toggle"
   ],
-  "author": "Alexander Heinrich",
+  "author": "Alexander Heinrich <alexander.heinrich@notiongroup.de",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/aexei/react-cookie-switch/issues"
