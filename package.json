@@ -1,5 +1,5 @@
 {
-  "name": "canaray-switch",
+  "name": "react-cookie-switch",
   "version": "1.0.0",
   "main": "build/index.js",
   "module": "build/index.esm.js",
@@ -19,7 +19,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/aexei/canaray-switch.git"
+    "url": "git+https://github.com/aexei/react-cookie-switch.git"
   },
   "keywords": [
     "React",
@@ -29,9 +29,9 @@
   "author": "Alexander Heinrich",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/aexei/canaray-switch/issues"
+    "url": "https://github.com/aexei/react-cookie-switch/issues"
   },
-  "homepage": "https://github.com/aexei/canaray-switch#readme",
+  "homepage": "https://github.com/aexei/react-cookie-switch#readme",
   "peerDependencies": {
     "react": ">=16.8.0",
     "react-dom": ">=16.8.0"

@@ -1,17 +1,19 @@
 import React, { Children, cloneElement, useEffect, useState } from "react";
 
-import { CanarySwitchProps } from "./CanarySwitch.types";
+import { CookieSwitchProps } from "./CookieSwitch.types";
 import Cookies from "js-cookie";
 
-const CanarySwitch: React.FC<CanarySwitchProps> = ({
+const CookieSwitch: React.FC<CookieSwitchProps> = ({
   children,
   cookieName,
+  attribute,
   activated,
   deactivated,
   ...props
 }) => {
   const _activated = activated || true;
   const _deactivated = deactivated || false;
+  const _attribute = attribute || "checked";
   const [status, setStatus] = useState<boolean>(false);
 
   const handleChange = (e) => {
@@ -38,7 +40,7 @@ const CanarySwitch: React.FC<CanarySwitchProps> = ({
       {Children.map(children, (child) => {
         if (React.isValidElement(child)) {
           return cloneElement(child, {
-            checked: status,
+            [_attribute]: status,
             onChange: handleChange,
           });
         }
@@ -47,4 +49,4 @@ const CanarySwitch: React.FC<CanarySwitchProps> = ({
   );
 };
 
-export default CanarySwitch;
+export default CookieSwitch;

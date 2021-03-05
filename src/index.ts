@@ -1,3 +1,1 @@
-import CanarySwitch from "./CanarySwitch";
-
-export { CanarySwitch };
+export { default } from "./CookieSwitch";

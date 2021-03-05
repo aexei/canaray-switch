@@ -1,11 +1,11 @@
 import { fireEvent, render } from "@testing-library/react";
 
-import CanarySwitch from "./CanarySwitch";
-import { CanarySwitchProps } from "./CanarySwitch.types";
+import CookieSwitch from "./CookieSwitch";
+import { CookieSwitchProps } from "./CookieSwitch.types";
 import React from "react";
 
 describe("Test Component", () => {
-  let props: CanarySwitchProps;
+  let props: CookieSwitchProps;
 
   beforeEach(() => {
     props = {
@@ -15,16 +15,15 @@ describe("Test Component", () => {
 
   const renderComponent = () =>
     render(
-      <CanarySwitch data-testid="canary-switch" {...props}>
+      <CookieSwitch data-testid="canary-switch" {...props}>
         <input data-testid="canary-checkbox" type="checkbox"></input>
-      </CanarySwitch>
+      </CookieSwitch>
     );
 
   it("should render default off", () => {
     const { getByTestId } = renderComponent();
     const input = getByTestId("canary-checkbox");
     expect(input).not.toBeChecked();
-    expect(input).
   });
 
   it("should activate canary", () => {
@@ -43,5 +42,4 @@ describe("Test Component", () => {
     expect(input).toBeChecked();
     expect(cswitch).toHaveAttribute("data-canray", "true");
   });
-  
 });
